@@ -8,16 +8,35 @@ height: 600px;
   margin: 0 10px ;
 }
 
-#foto-perfil{
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  margin: -100px 10px;
-  margin-right: 20px;
+@media(min-width: 576px){
+  #foto-perfil{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin: -100px 10px;
+    margin-right: 20px;
+  }
 }
 
-div{
-  display: block;
+@media(max-width: 575px){
+  #foto-perfil{
+    width: 30%;
+    height: 200px;
+    border-radius: 100%;
+    margin-left: 50px;
+  }
+}
+
+@media(min-width: 576px){
+  div{
+    display: block;
+  }
+}
+
+@media(max-width: 575px){
+  div{
+    display: list-item;
+  }
 }
 
 #titulos{

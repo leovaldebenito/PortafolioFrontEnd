@@ -1,5 +1,5 @@
 <h1>Educación</h1>
-<div class="educacion" *ngFor="let educacion of educacionList">
+<div class="educacion" *ngFor="let educacion of educacionList" class="col-xs-12">
   <form>
     <button type="button" class="btn btn-success"><i class="bi bi-plus-lg"></i></button><br>
     <button type="button" class="btn btn-dark"><i class="bi bi-pen"></i></button><br>
@@ -7,9 +7,11 @@
   </form>
 
 
-  <div id="container">
-    <img [src]="educacion.img">
-    <div>
+  <div id="container" class="col-xs-12">
+    <div class="col-xs-12">
+      <img [src]="educacion.img">
+    </div>
+    <div class="col-xs-12">
       <h3>{{educacion.titulo}}</h3>
       <p>{{educacion.institucion}}</p>
       <h5>{{educacion.periodo}}</h5>
