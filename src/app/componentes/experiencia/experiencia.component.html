@@ -1,0 +1,25 @@
+<h1>Experiencia</h1>
+
+<div class="experiencia" *ngFor="let experiencia of experienciaList" [ngClass]="{'reminder': experiencia.reminder}"
+>
+  <form>
+    <div type="button" class="btn btn-success" (click)="onDelete()"><i class="bi bi-plus-lg"></i></div><br>
+    <div type="button" class="btn btn-dark" (click)="onDelete()"><i class="bi bi-pen"></i></div><br>
+    <div type="button" class="btn btn-danger" (click)="onDelete()"><i class="bi bi-trash"></i></div>
+  </form>
+
+  <div id="container" >
+
+    <img [src]="experiencia.img">
+    <div>
+      <h3>{{experiencia.cargo}}</h3>
+      <p>{{experiencia.empresa}}</p>
+      <h5>{{experiencia.periodo}}</h5>
+      <h5>{{experiencia.lugar}}</h5>
+    </div>
+
+  </div>
+
+<hr color-line="silver">
+</div>
+

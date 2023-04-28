@@ -1,0 +1,14 @@
+<h1>Proyectos</h1>
+<div class="proyectos" *ngFor="let proyectos of proyectosList">
+  <div id="container">
+     <div>
+      <h2>{{proyectos.nombre}}</h2>
+      <h5>{{proyectos.descripcion}}
+      </h5>
+      <h4>{{proyectos.fecha}}</h4>
+      <a href="{{proyectos.hipervinculo}}" target="_blank">Ir al proyecto en GitHub</a>
+    </div>
+    <img [src]="proyectos.img">
+  </div>
+  <hr color-line="silver">
+</div>

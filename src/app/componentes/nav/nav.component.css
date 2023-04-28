@@ -1,0 +1,20 @@
+nav{
+  padding: 10px 60px;
+  position: sticky;
+}
+
+form{
+  float: right;
+  margin: 10px;
+}
+
+.btn-circle{
+  border-radius: 20px;
+  border-color: 1px solid transparent;
+  background-color: rgba(15, 15, 15, 0.822);
+  margin-right: 10px;
+}
+
+.btn-circle:hover{
+ background-color: aliceblue;
+}

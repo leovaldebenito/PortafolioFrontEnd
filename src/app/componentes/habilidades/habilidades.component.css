@@ -1,0 +1,25 @@
+#container{
+  display:flex;
+}
+
+img{
+  width: 200px;
+  height: 200px;
+  margin: 0 10px 10px 10px;
+  border: 2px solid green;
+  border-radius: 5px;
+}
+
+form{
+  float: right !important;
+}
+
+button{
+  margin: 5px;
+}
+
+h1{
+  padding-left: 10px;
+  background-color: rgb(68, 61, 65);
+  border-radius: 5px;
+}

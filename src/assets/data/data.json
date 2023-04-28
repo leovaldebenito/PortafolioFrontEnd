@@ -1,0 +1,111 @@
+{
+  "nombre": "Nelson Leonardo Valdebenito",
+  "fotoPerfil": "/assets/fotocampus.jpg",
+  "bandera": "/assets/argentina.png",
+  "profesion": "Director y Secretario en CPE RÍO NEGRO",
+  "ubicacion": "Bariloche - Río Negro - Argentina",
+  "acercaDe": "Profesor de Educación General Básica, Técnico Analista de Sistemas de Computación y Desarrollador Full Stack Junior",
+  "experiencia":[{
+    "img": "/assets/Aldea infantil.jpg",
+    "cargo": "Maestro de Grado",
+    "empresa": "Asociación Aldea Infantil Bariloche - Jornada Parcial",
+    "periodo":"febrero 2007 a febrero 2019 - 12 años",
+    "lugar": "San Carlos de Bariloche - Río Negro"
+  },
+  {
+    "img": "/assets/educacion.jpg",
+    "cargo": "Maestro de Grado",
+    "empresa": "Consejo Provincial de Educación Río Negro - Jornada Parcial",
+    "periodo":"febrero 2007 a enero 2023 - 16 años",
+    "lugar": "San Carlos de Bariloche - Río Negro"
+  }
+  ,
+  {
+    "img": "/assets/ep278.jpg",
+    "cargo": "Secretario",
+    "empresa": "Consejo Provincial de Educación Río Negro - Escuela 278- Jornada Parcial",
+    "periodo":"febrero 2023 hasta la actualidad - 2 meses",
+    "lugar": "San Carlos de Bariloche - Río Negro"
+  },
+  {
+    "img": "/assets/educacion.jpg",
+    "cargo": "Director de Escuela de Adultos de Primera",
+    "empresa": "Consejo Provincial de Educación Río Negro - Escuela de Educación Básica de Adultos- Jornada Parcial",
+    "periodo":"febrero 2023 hasta la actualidad - 2 meses",
+    "lugar": "San Carlos de Bariloche - Río Negro"
+  }
+],
+"educacion":[{
+  "img": "/assets/esrn20.jpg",
+  "titulo":"Bachiller en Comunicación Social",
+  "institucion":"Centro de Educación Media N°20",
+  "periodo": "1998 a 2002",
+  "lugar":"San Carlos de Bariloche - Río Negro"
+},
+{
+  "img": "/assets/ifdc.jpg",
+  "titulo":"Profesor de Enseñanza General Básica 1 y 2",
+  "institucion":"Instituto de Formación Docente Continua Bariloche",
+  "periodo": "2003 a 2006",
+  "lugar":"San Carlos de Bariloche - Río Negro"
+},
+{
+  "img": "/assets/issd.png",
+  "titulo":"Técnico Analista de Sistemas de Computación",
+  "institucion":"Instituto Superior Santo Domingo",
+  "periodo": "2020 a 2022",
+  "lugar":"Ciudad de Córdoba - Córdoba"
+},
+{
+  "img": "/assets/argentinaprograma.png",
+  "titulo":"Desarrollador Full Stack Junior",
+  "institucion":"INTI - Argentina Programa 4.0",
+  "periodo": "2022 - actualidad",
+  "lugar":"Ministerio de Economía Argentina"
+},
+{
+  "img": "/assets/codoacodo.webp",
+  "titulo":"Desarrollador Full Stack Python",
+  "institucion":"Codo a Codo 4.0",
+  "periodo": "2023 - actualidad",
+  "lugar":"Buenos Aires Ciudad"
+},
+{
+  "img": "/assets/nuestra-escuela.png",
+  "titulo":"Especialización Docente de Nivel Superior en Educación Primaria y TIC",
+  "institucion":"Nuestra Escuela",
+  "periodo": "2014 - 2018",
+  "lugar":"Ministerio de Educación, Cultura, Ciencia y Tecnología - Presidencia de la Nación"
+},
+{
+  "img": "/assets/nuestra-escuela.png",
+  "titulo":"Especialización Docente de Nivel Superior en Enseñanza de la Matemática en la Escuela Primaria",
+  "institucion":"Nuestra Escuela",
+  "periodo": "2014 - 2018",
+  "lugar":"Ministerio de Educación, Cultura, Ciencia y Tecnología - Presidencia de la Nación"
+}
+],
+"proyectos":[{
+  "img": "./assets/AST.png",
+  "nombre": "ALL System Tools",
+  "descripcion": "Proyecto realizado junto a Lorena Rodriguez y Ariel Flores. Fue realizado en el marco de las materias Práctica Profesionalizante 1, 2 y 3 de la carrera Analista de Sistemas de Computación en el Instituto Superior Santo Domingo. El lenguaje de programación utilizado fue C# y la base de datos SQL server de Microsoft. El sistema está realizado para un empresa de alquiler de volquetes. En la misma se gestiona el alquiler de volquetes, clientes, proveedores, gastos, servicios, cobros, logística, estadísticas y reportes.",
+  "fecha": "27 de febrero de 2023",
+  "hipervinculo": "https://github.com/leovaldebenito/ALLSystemTools.git"
+},
+{
+  "img": "./assets/panel.png",
+  "nombre": "Panel PHP aplicado a HTML",
+  "descripcion": "Proyecto en el marco de la materia Técnica de Programación 3 de la carrera Analista de Sistemas de Computación en el Instituto Superior Santo Domingo. Los lenguajes de programación utilizados fueron PHP, HTML, CSS y el framework Bootstrap y la base de datos MySQL. El sistema está realizado para mostrar una página en la que se muestra el incrustado de PHP en una template. Se gestiona un logueo de usuario con características y restricciones según la función, registro de actividades, el detalle de las actividades según su estado de realización y un reporte de incidencias según su estado.",
+  "fecha": "16 de diciembre de 2022",
+  "hipervinculo": "https://github.com/leovaldebenito/panelPHP.git"
+},
+{
+  "img": "./assets/portafolio.PNG",
+  "nombre": "Portafolio Web Full Stack",
+  "descripcion": "Proyecto desarrollado en curso #YoProgramo 4.0 en el marco de Argentina Programa llevado a cabo por el Instituto Nacional de Tecnologías de la Información dependiente del Ministerio de Economía de la Nación. Los lenguajes de programación utilizados fueron HTML, CSS, TypeScript, Java y los frameworks Bootstrap, Angular y la base de datos MySQL. El sistema está realizado para mostrar una página en la que se desarrolla lo aprendido durante el curso en un portfolio personal . Se observan las secciones siguientes: encabezado, pie, Acerca de, experiencia, educación, proyectos, habilidades.",
+  "fecha": "15 de mayo de 2023",
+  "hipervinculo": "https://github.com/leovaldebenito/PortafolioFrontEnd.git"
+}
+]
+
+}

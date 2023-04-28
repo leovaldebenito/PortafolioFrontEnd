@@ -1,0 +1,21 @@
+<h1>Educación</h1>
+<div class="educacion" *ngFor="let educacion of educacionList">
+  <form>
+    <button type="button" class="btn btn-success"><i class="bi bi-plus-lg"></i></button><br>
+    <button type="button" class="btn btn-dark"><i class="bi bi-pen"></i></button><br>
+    <button type="button" class="btn btn-danger" (click)="onDelete()"><i class="bi bi-trash"></i></button>
+  </form>
+
+
+  <div id="container">
+    <img [src]="educacion.img">
+    <div>
+      <h3>{{educacion.titulo}}</h3>
+      <p>{{educacion.institucion}}</p>
+      <h5>{{educacion.periodo}}</h5>
+      <p>{{educacion.lugar}}</p>
+    </div>
+  </div>
+  <hr color-line="silver">
+</div>
+
