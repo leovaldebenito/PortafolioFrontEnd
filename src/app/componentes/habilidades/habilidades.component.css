@@ -23,3 +23,7 @@ h1{
   background-color: rgb(68, 61, 65);
   border-radius: 5px;
 }
+
+.row{
+  padding: 20px;
+}
