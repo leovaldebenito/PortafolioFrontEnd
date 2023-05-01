@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './componentes/nav/nav.component';
@@ -12,6 +12,7 @@ import { HabilidadesComponent } from './componentes/habilidades/habilidades.comp
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { PieComponent } from './componentes/pie/pie.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+
 
 @NgModule({
   declarations: [
@@ -37,7 +38,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
       innerStrokeColor: "#C7E596",
       animationDuration: 300,
 
-    })
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
