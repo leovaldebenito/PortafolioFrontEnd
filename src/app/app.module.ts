@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './componentes/nav/nav.component';
@@ -33,6 +34,7 @@ import { LoginComponent } from './componentes/login/login.component';
   imports: [
     BrowserModule,
     HttpClientModule,
+    AppRoutingModule,
     NgCircleProgressModule.forRoot({
       // set defaults here
       radius: 100,
@@ -43,6 +45,7 @@ import { LoginComponent } from './componentes/login/login.component';
       animationDuration: 300,
 
     }),
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -11,8 +12,10 @@ export class NavComponent {
 
 @Output() btnClick = new EventEmitter()
 
-onClick(){
-  console.log("Login");
+constructor(private router: Router){}
+
+login(){
+  this.router.navigate(['/login'])
 }
 }
 
