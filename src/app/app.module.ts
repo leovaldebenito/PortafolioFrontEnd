@@ -12,6 +12,8 @@ import { HabilidadesComponent } from './componentes/habilidades/habilidades.comp
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { PieComponent } from './componentes/pie/pie.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { HomeComponent } from './componentes/home/home.component';
+import { LoginComponent } from './componentes/login/login.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     EducacionComponent,
     HabilidadesComponent,
     ProyectosComponent,
-    PieComponent
+    PieComponent,
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
