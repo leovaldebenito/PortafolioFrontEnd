@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import {FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './componentes/nav/nav.component';
@@ -15,6 +16,8 @@ import { PieComponent } from './componentes/pie/pie.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
+import { interceptorProvider } from './servicio/interceptor-service';
+
 
 
 @NgModule({
@@ -35,6 +38,7 @@ import { LoginComponent } from './componentes/login/login.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    FormsModule,
     NgCircleProgressModule.forRoot({
       // set defaults here
       radius: 100,
@@ -47,7 +51,9 @@ import { LoginComponent } from './componentes/login/login.component';
     }),
 
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

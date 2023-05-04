@@ -4,6 +4,7 @@ import { LoginUsuario } from 'src/app/model/login-usuario';
 import { AuthService } from 'src/app/servicio/auth.service';
 import { TokenService } from 'src/app/servicio/token.service';
 
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
