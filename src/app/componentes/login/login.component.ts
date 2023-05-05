@@ -14,11 +14,11 @@ import { TokenService } from 'src/app/servicio/token.service';
 export class LoginComponent {
   isLogged = false;
   isLogginFail = false;
-  loginUsuario! : LoginUsuario;
-  nombreUsuario! : string;
-  password! : string;
+  loginUsuario!: LoginUsuario;
+  nombreUsuario!: string;
+  password!: string;
   roles: string[] = [];
-  errMsj! : string;
+  errMsj!: string;
 
   constructor(private tokenService: TokenService, private authService: AuthService, private router: Router){ }
 
