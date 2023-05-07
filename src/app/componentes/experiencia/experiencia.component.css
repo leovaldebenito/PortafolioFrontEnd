@@ -24,3 +24,8 @@ h1{
   background-color: rgb(68, 61, 65);
   border-radius: 5px;
 }
+
+#add{
+  float: right;
+  margin: 5px;
+}

@@ -1,21 +1,25 @@
-<h1>Experiencia</h1>
-
-<div class="experiencia" *ngFor="let experiencia of experienciaList" [ngClass]="{'reminder': experiencia.reminder}"
->
-  <form>
-    <div type="button" class="btn btn-success" (click)="onDelete()"><i class="bi bi-plus-lg"></i></div><br>
-    <div type="button" class="btn btn-dark" (click)="onDelete()"><i class="bi bi-pen"></i></div><br>
-    <div type="button" class="btn btn-danger" (click)="onDelete()"><i class="bi bi-trash"></i></div>
+  <form id="add">
+    <div type="button" class="btn btn-success" title="Agregar nueva experiencia"
+    routerLink="/nuevaexp" *ngIf="isLogged"><i class="bi bi-plus-lg"></i></div><br>
   </form>
+  <h1>Experiencia Laboral</h1>
+  <div class="experiencia" *ngFor="let Experiencia of expe" >
+    <form *ngIf="isLogged">
+
+      <div type="button" class="btn btn-dark" title="Editar"
+      routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pen"></i></div><br>
+      <div type="button" class="btn btn-danger" title="Borrar"
+      (click)="delete(Experiencia.id)"><i class="bi bi-trash"></i></div>
+    </form>
 
   <div id="container" >
 
-    <img [src]="experiencia.img">
+    <img [src]="">
     <div>
-      <h3>{{experiencia.cargo}}</h3>
-      <p>{{experiencia.empresa}}</p>
-      <h5>{{experiencia.periodo}}</h5>
-      <h5>{{experiencia.lugar}}</h5>
+      <h3>{{Experiencia.nombreE}}</h3>
+      <p>{{Experiencia.empresaE}}</p>
+      <h5>{{Experiencia.periodoE}}</h5>
+      <h5>{{Experiencia.lugarE}}</h5>
     </div>
 
   </div>
