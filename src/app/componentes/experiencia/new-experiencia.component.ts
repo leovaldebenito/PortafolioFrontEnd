@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Experiencia } from 'src/app/model/experiencia';
 import { SExperienciaService } from 'src/app/servicio/s-experiencia.service';
@@ -8,7 +8,7 @@ import { SExperienciaService } from 'src/app/servicio/s-experiencia.service';
   templateUrl: './new-experiencia.component.html',
   styleUrls: ['./new-experiencia.component.css']
 })
-export class NewExperienciaComponent {
+export class NewExperienciaComponent implements OnInit {
   nombreE: string = '';
   empresaE: string = '';
   periodoE: string = '';
@@ -16,13 +16,17 @@ export class NewExperienciaComponent {
 
   constructor(private sExperiencia: SExperienciaService, private router: Router){ }
 
+  ngOnInit(): void {
+
+  }
+
   onCreate(): void {
     const expe = new Experiencia(this.nombreE, this.empresaE, this.periodoE, this.lugarE);
     this.sExperiencia.save(expe).subscribe(
       data=> {
         alert("Experiencia añadida!");
         this.router.navigate(['']);
-    },err =>{
+    }, err =>{
       alert("Fallo al agregar experiencia");
       this.router.navigate(['']);
     })
