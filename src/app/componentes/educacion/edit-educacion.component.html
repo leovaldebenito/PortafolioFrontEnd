@@ -1,0 +1,30 @@
+<div class="container" *ngIf="educacion">
+  <div class="row">
+    <div>
+      <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+        <div class="form-group">
+          <label for="nombreE">Título obtenido o a obtener</label>
+          <input type="text" class="form-control" id="nombreE" placeholder="Nombre del título"
+          name="nombreE" [(ngModel)]="educacion.nombreE" required>
+        </div>
+        <div class="form-group">
+          <label for="institucionE">Institución que lo otorga</label>
+          <input type="text" class="form-control" id="institucionE" placeholder="Nombre de la Empresa"
+          name="institucionE" [(ngModel)]="educacion.institucionE" required>
+        </div>
+        <div class="form-group">
+          <label for="periodoE">Período de cursado</label>
+          <input type="text" class="form-control" id="periodoE" placeholder="Período de cursado"
+          name="periodoE" [(ngModel)]="educacion.periodoE" required>
+        </div>
+        <div class="form-group">
+          <label for="lugarE">Ciudad y  Provincia</label>
+          <input type="text" class="form-control" id="lugarE" placeholder="Ciudad - Provincia"
+          name="lugarE" [(ngModel)]="educacion.lugarE" required>
+        </div>
+        <button class="btn btn-primary" >Modificar Datos</button>
+      </form>
+    </div>
+
+  </div>
+</div>
