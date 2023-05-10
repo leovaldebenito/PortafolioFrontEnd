@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Route, Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Habilidad } from 'src/app/model/habilidad';
 import { HabilidadService } from 'src/app/servicio/habilidad.service';
 

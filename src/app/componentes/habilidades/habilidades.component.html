@@ -44,11 +44,12 @@
         [lazy]="true"
     ></circle-progress>
 
-    <div class="habilidad" *ngFor="let  of " >
+    <div class="habilidad" >
+
       <form *ngIf="isLogged">
 
         <div type="button" class="btn btn-dark" title="Editar"
-        routerLink="/edithab/{{habilidad.id}}"><i class="bi bi-pen"></i></div><br>
+        routerLink="/edithab/{{habilidad.id}}"><i class="bi bi-pen"></i></div>
         <div type="button" class="btn btn-danger" title="Borrar"
         (click)="delete(habilidad.id)"><i class="bi bi-trash"></i></div>
       </form>
