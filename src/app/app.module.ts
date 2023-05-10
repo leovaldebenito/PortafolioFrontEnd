@@ -21,6 +21,8 @@ import { NewExperienciaComponent } from './componentes/experiencia/new-experienc
 import { EditExperienciaComponent } from './componentes/experiencia/edit-experiencia.component';
 import { NewEducacionComponent } from './componentes/educacion/new-educacion.component';
 import { EditEducacionComponent } from './componentes/educacion/edit-educacion.component';
+import { NewHabilidadComponent } from './componentes/habilidades/new-habilidad.component';
+import { EditHabilidadComponent } from './componentes/habilidades/edit-habilidad.component';
 
 
 
@@ -40,7 +42,9 @@ import { EditEducacionComponent } from './componentes/educacion/edit-educacion.c
     NewExperienciaComponent,
     EditExperienciaComponent,
     NewEducacionComponent,
-    EditEducacionComponent
+    EditEducacionComponent,
+    NewHabilidadComponent,
+    EditHabilidadComponent
   ],
   imports: [
     BrowserModule,
