@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { PorfolioService } from 'src/app/servicios/porfolio.service';
+import { Proyecto } from 'src/app/model/proyecto';
+import { ProyectoService } from 'src/app/servicio/proyecto.service';
+import { TokenService } from 'src/app/servicio/token.service';
+
 
 @Component({
   selector: 'app-proyectos',
@@ -7,13 +10,34 @@ import { PorfolioService } from 'src/app/servicios/porfolio.service';
   styleUrls: ['./proyectos.component.css']
 })
 export class ProyectosComponent implements OnInit {
-  proyectosList:any;
-  constructor(private datosPorfolio:PorfolioService){}
+  pro: Proyecto[] = [];
+  constructor(private sProyecto: ProyectoService, private tokenService: TokenService){}
+
+  isLogged = false;
 
   ngOnInit(): void {
-    this.datosPorfolio.obtenerDatos().subscribe(data=>{
-      this.proyectosList=data.proyectos;
-    });
+    this.cargarProyecto();
+    if (this.tokenService.getToken()) {
+      this.isLogged = true;
+    } else {
+      this.isLogged = false;
+    }
+  }
+
+  cargarProyecto(): void {
+    this.sProyecto.lista().subscribe(data => { this.pro = data; })
+  }
+
+  delete(id?: number){
+    if(id != undefined){
+      this.sProyecto.delete(id).subscribe(
+        data => {
+          this.cargarProyecto();
+        }, err => {
+          alert("No se pudo borrar la experiencia");
+        }
+      )
+    }
   }
 
 }

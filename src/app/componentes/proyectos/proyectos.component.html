@@ -1,15 +1,26 @@
+<form id="add">
+  <div type="button" class="btn btn-success" title="Agregar Proyecto"
+  routerLink="/nuevopro" *ngIf="isLogged"><i class="bi bi-plus-lg"></i></div><br>
+</form>
 <h1>Proyectos</h1>
-<div class="proyectos" *ngFor="let proyectos of proyectosList">
+<div class="proyectos" *ngFor="let Proyecto of pro">
+  <form *ngIf="isLogged">
+
+    <div type="button" class="btn btn-dark" title="Editar"
+    routerLink="/editpro/{{Proyecto.id}}"><i class="bi bi-pen"></i></div><br>
+    <div type="button" class="btn btn-danger" title="Borrar"
+    (click)="delete(Proyecto.id)"><i class="bi bi-trash"></i></div>
+  </form>
   <div id="container">
      <div class="col-xs-12">
-      <h2>{{proyectos.nombre}}</h2>
-      <h5>{{proyectos.descripcion}}
+      <h2>{{Proyecto.nombreP}}</h2>
+      <h5>{{Proyecto.descripcionP}}
       </h5>
-      <h4>{{proyectos.fecha}}</h4>
-      <a href="{{proyectos.hipervinculo}}" target="_blank">Ir al proyecto en GitHub</a>
+      <!--<h4>{{proyectos.fecha}}</h4>
+      <a href="{{proyectos.hipervinculo}}" target="_blank">Ir al proyecto en GitHub</a> -->
     </div>
     <div class="d-none d-sm-none d-md-block">
-      <img [src]="proyectos.img">
+      <!--<img [src]="proyectos.img">-->
     </div>
   </div>
   <hr color-line="silver">
