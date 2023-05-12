@@ -1,5 +1,5 @@
 export class Proyecto {
-   id? : number;
+   id : number;
     nombreP : string;
     descripcionP : string;
 

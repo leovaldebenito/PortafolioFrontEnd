@@ -11,6 +11,7 @@ import { EditHabilidadComponent } from './componentes/habilidades/edit-habilidad
 import { NewProyectoComponent } from './componentes/proyectos/new-proyecto.component';
 import { EditProyectoComponent } from './componentes/proyectos/edit-proyecto.component';
 
+
 const routes: Routes = [
   {path:'', component: HomeComponent},
   {path:'login', component: LoginComponent},
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path: 'edithab/:id', component: EditHabilidadComponent},
   {path: 'nuevopro', component: NewProyectoComponent},
   {path: 'editpro/:id', component: EditProyectoComponent}
+
 ];
 
 @NgModule({

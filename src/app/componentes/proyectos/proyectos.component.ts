@@ -11,7 +11,8 @@ import { TokenService } from 'src/app/servicio/token.service';
 })
 export class ProyectosComponent implements OnInit {
   pro: Proyecto[] = [];
-  constructor(private sProyecto: ProyectoService, private tokenService: TokenService){}
+
+  constructor(private sProyecto: ProyectoService, private tokenService: TokenService){ }
 
   isLogged = false;
 
@@ -25,7 +26,7 @@ export class ProyectosComponent implements OnInit {
   }
 
   cargarProyecto(): void {
-    this.sProyecto.lista().subscribe(data => { this.pro = data; })
+    this.sProyecto.lista().subscribe(data => { this.pro = data;})
   }
 
   delete(id?: number){
@@ -34,7 +35,7 @@ export class ProyectosComponent implements OnInit {
         data => {
           this.cargarProyecto();
         }, err => {
-          alert("No se pudo borrar la experiencia");
+          alert("No se pudo borrar el Proyecto");
         }
       )
     }
