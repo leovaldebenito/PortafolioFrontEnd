@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { PorfolioService } from 'src/app/servicios/porfolio.service';
+import { persona } from 'src/app/model/persona.model';
+import { PersonaService } from 'src/app/servicio/persona.service';
+import { TokenService } from 'src/app/servicio/token.service';
+
 
 @Component({
   selector: 'app-acerca-de',
@@ -7,17 +10,29 @@ import { PorfolioService } from 'src/app/servicios/porfolio.service';
   styleUrls: ['./acerca-de.component.css']
 })
 export class AcercaDeComponent implements OnInit{
+  persona: persona = null;
+
   miPorfolio:any;
 
-  constructor(private datosPorfolio:PorfolioService){
+  constructor(public personaService: PersonaService, private tokenService: TokenService){
 
   }
 
+  isLogged = false;
   ngOnInit():void{
-    this.datosPorfolio.obtenerDatos().subscribe(data =>{
-      console.log(data);
-      this.miPorfolio=data;
-    });
+    this.cargarPersona();
+    if(this.tokenService.getToken()){
+    this.isLogged = true;
+    } else{
+      this.isLogged = false;
+    }
   }
+
+  cargarPersona(){
+    this.personaService.details(1).subscribe(data =>
+      {this.persona = data}
+      )
+  }
+
 
 }

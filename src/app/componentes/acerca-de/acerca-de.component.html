@@ -1,10 +1,10 @@
 <div Id="button">
-  <button type="button" class="btn btn-dark"><i class="bi bi-pen"></i></button>
+  <button type="button" class="btn btn-primary" routerLink="/editacercade/1" *ngIf="isLogged">
+    <i class="bi bi-pen"></i> Editar Persona</button>
 </div>
 
 <div>
-  <h1>Acerca de...</h1>
-  <h5>{{miPorfolio.acercaDe}}</h5>
+  <h1>Acerca de mi/s título/s</h1>
+  <h5>{{persona.descripcion}}</h5>
 </div>
-
 

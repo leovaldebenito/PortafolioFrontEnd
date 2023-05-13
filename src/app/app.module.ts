@@ -25,6 +25,7 @@ import { NewHabilidadComponent } from './componentes/habilidades/new-habilidad.c
 import { EditHabilidadComponent } from './componentes/habilidades/edit-habilidad.component';
 import { NewProyectoComponent } from './componentes/proyectos/new-proyecto.component';
 import { EditProyectoComponent } from './componentes/proyectos/edit-proyecto.component';
+import { EditAcercaDeComponent } from './componentes/acerca-de/edit-acerca-de.component';
 
 
 
@@ -48,7 +49,8 @@ import { EditProyectoComponent } from './componentes/proyectos/edit-proyecto.com
     NewHabilidadComponent,
     EditHabilidadComponent,
     NewProyectoComponent,
-    EditProyectoComponent
+    EditProyectoComponent,
+    EditAcercaDeComponent
   ],
   imports: [
     BrowserModule,

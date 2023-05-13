@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { persona } from 'src/app/model/persona.model';
 import { PersonaService } from 'src/app/servicio/persona.service';
-import { PorfolioService } from 'src/app/servicios/porfolio.service';
+import { TokenService } from 'src/app/servicio/token.service';
+
 
 
 @Component({
@@ -10,22 +11,28 @@ import { PorfolioService } from 'src/app/servicios/porfolio.service';
   styleUrls: ['./encabezado.component.css']
 })
 export class EncabezadoComponent implements OnInit{
-  persona: persona = new persona("","","");
+  persona: persona = null;
 
   miPorfolio:any;
 
-  constructor(public personaService: PersonaService,
-    private datosPorfolio:PorfolioService){
+  constructor(public personaService: PersonaService, private tokenService: TokenService){
 
   }
 
+  isLogged = false;
   ngOnInit():void{
-    this.datosPorfolio.obtenerDatos().subscribe(data =>{
-      console.log(data);
-      this.miPorfolio=data;
-    });
-    this.personaService.getPersona().subscribe(data => {this.persona = data})
+    this.cargarPersona();
+    if(this.tokenService.getToken()){
+    this.isLogged = true;
+    } else{
+      this.isLogged = false;
+    }
   }
 
+  cargarPersona(){
+    this.personaService.details(1).subscribe(data =>
+      {this.persona = data}
+      )
+  }
 
 }

@@ -1,21 +1,22 @@
 <img src="/assets/cubo.jpg">
 <div ID="perfil">
-  <img ID="foto-perfil" src="{{miPorfolio.fotoPerfil}}">
+  <img src={{persona.img}} ID="foto-perfil" >
   <button type="button" class="btn btn-dark"><i class="bi bi-pen"></i></button>
 </div>
 
 <div ID="bandera" class="d-none d-sm-none d-md-inline">
-  <img ID="imgbandera" src="{{miPorfolio.bandera}}">
+  <img ID="imgbandera" src="/assets/argentina.png">
 </div>
 
 <div ID="titulos">
   <h3>{{persona.nombre}} {{persona.apellido}}</h3>
-    <h5>{{miPorfolio.profesion}}</h5>
-    <h6>{{miPorfolio.ubicacion}} <a href="#">Información de Contacto</a></h6>
-    <form>
-      <button type="button" class="btn btn-primary">Tengo interés en</button>
-      <button type="button" class="btn btn-outline-info">Añadir Sección</button>
-      <button type="button" class="btn btn-outline-light">Más</button>
-    </form>
+
+    <h6>{{persona.ubicacion}} <a href="https://www.linkedin.com/in/leonardo-valdebenito-2b738613a/">Información de Contacto</a></h6>
+    <!--<form id="add">
+      <div type="button" class="btn btn-primary"
+      routerLink="/editacercade/1" *ngIf="isLogged">Editar Persona
+      </div><br>
+    </form>-->
 </div>
+
 
