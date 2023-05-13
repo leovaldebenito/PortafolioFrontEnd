@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class HabilidadService {
-  URL = 'http://localhost:8080/habilidad/';
+  URL = 'https://portafoliobackend-production-fb5b.up.railway.app/habilidad/';
 
   constructor(private httpClient: HttpClient) { }
 

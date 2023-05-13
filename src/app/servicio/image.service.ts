@@ -5,6 +5,7 @@ import { Storage, getDownloadURL, list, ref, uploadBytes } from '@angular/fire/s
   providedIn: 'root'
 })
 export class ImageService {
+  URL = 'https://portafoliobackend-production-fb5b.up.railway.app/image/';
   url: string = "";
 
   constructor(private storage: Storage) { }

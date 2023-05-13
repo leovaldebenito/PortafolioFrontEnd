@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProyectoService {
-  URL = 'http://localhost:8080/proyecto/';
+  URL = 'https://portafoliobackend-production-fb5b.up.railway.app/proyecto/';
 
   constructor(private httpClient: HttpClient) { }
 

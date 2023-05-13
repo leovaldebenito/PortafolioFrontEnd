@@ -10,7 +10,7 @@ import { JwtDto } from '../model/jwt-dto';
 })
 export class AuthService {
 
-  authURL = 'http://localhost:8080/auth/';
+  authURL = 'https://portafoliobackend-production-fb5b.up.railway.app/auth/';
 
   constructor(private httpClient: HttpClient) { }
 
