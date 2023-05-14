@@ -1,0 +1,49 @@
+[debug] [2023-05-14T22:24:35.447Z] ----------------------------------------------------------------------
+[debug] [2023-05-14T22:24:35.450Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\leo_3\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-05-14T22:24:35.451Z] CLI Version:   12.0.0
+[debug] [2023-05-14T22:24:35.452Z] Platform:      win32
+[debug] [2023-05-14T22:24:35.453Z] Node Version:  v18.15.0
+[debug] [2023-05-14T22:24:35.454Z] Time:          Sun May 14 2023 19:24:35 GMT-0300 (hora estándar de Argentina)
+[debug] [2023-05-14T22:24:35.455Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-14T22:24:35.688Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-14T22:24:35.690Z] > authorizing via signed-in user (leonardovaldebenito21@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\leo_3\Documents\Argentina Programa\PortafolioFrontEnd
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-05-14T22:24:47.080Z] Using project from CLI flag: frontendvaldebenito
+[debug] [2023-05-14T22:24:47.083Z] > refreshing access token with scopes: []
+[debug] [2023-05-14T22:24:47.087Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-14T22:24:47.087Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-14T22:24:47.568Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-05-14T22:24:47.568Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-14T22:24:47.630Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/frontendvaldebenito [none]
+[debug] [2023-05-14T22:24:49.002Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/frontendvaldebenito 200
+[debug] [2023-05-14T22:24:49.002Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/frontendvaldebenito {"projectId":"frontendvaldebenito","projectNumber":"897506808838","displayName":"FrontEndValdebenito","name":"projects/frontendvaldebenito","resources":{"hostingSite":"frontendvaldebenito","storageBucket":"frontendvaldebenito.appspot.com","locationId":"southamerica-east1"},"state":"ACTIVE","etag":"1_bd29bfde-2ccb-4183-9b4e-511dc3f3ce86"}
+[info] i  Using project frontendvaldebenito (FrontEndValdebenito) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
