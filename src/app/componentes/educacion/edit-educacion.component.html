@@ -22,6 +22,11 @@
           <input type="text" class="form-control" id="lugarE" placeholder="Ciudad - Provincia"
           name="lugarE" [(ngModel)]="educacion.lugarE" required>
         </div>
+        <div class="form-group">
+          <label for="img">Imagen</label>
+          <input type="file" class="form-control" id="img"
+          name="img" [(ngModel)]="educacion.img" (change)="uploadImage($event)" accept=".jpg, .jpeg, .png, .webp, .PNG">
+        </div>
         <button class="btn btn-primary" >Modificar Datos</button>
       </form>
     </div>

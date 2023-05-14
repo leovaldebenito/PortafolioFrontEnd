@@ -2,6 +2,7 @@ import { Educacion } from './../../model/educacion';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { EducacionService } from 'src/app/servicio/educacion.service';
+import { ImageService } from 'src/app/servicio/image.service';
 
 @Component({
   selector: 'app-edit-educacion',
@@ -14,7 +15,8 @@ export class EditEducacionComponent implements OnInit {
   constructor(
     private educacionS: EducacionService,
     private activatedRouter : ActivatedRoute,
-    private router : Router
+    private router : Router,
+    private imageService: ImageService
   ) { }
 
   ngOnInit(): void {
@@ -29,15 +31,22 @@ export class EditEducacionComponent implements OnInit {
     )
   }
 
-  onUpdate(): void {
-    const id = this.activatedRouter.snapshot.params['id'];
+  onUpdate(): void{
+    const id= this.activatedRouter.snapshot.params['id'];
+    this.educacion.img = this.imageService.url
     this.educacionS.update(id, this.educacion).subscribe(
       data => {
         this.router.navigate(['']);
-      }, err => {
-        alert("Error al modificar Educacion");
+      },err => {
+        alert("Error al modificar persona");
         this.router.navigate(['']);
       }
     )
+  }
+
+  uploadImage($event: any){
+    const id = this.activatedRouter.snapshot.params['id'];
+    const name = "perfil_" + id;
+    this.imageService.uploadImage($event, name)
   }
 }

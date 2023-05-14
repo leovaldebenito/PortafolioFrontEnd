@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { persona } from 'src/app/model/persona.model';
+import { ImageService } from 'src/app/servicio/image.service';
 import { PersonaService } from 'src/app/servicio/persona.service';
 import { TokenService } from 'src/app/servicio/token.service';
 
@@ -15,7 +17,8 @@ export class EncabezadoComponent implements OnInit{
 
   miPorfolio:any;
 
-  constructor(public personaService: PersonaService, private tokenService: TokenService){
+  constructor(public personaService: PersonaService, private tokenService: TokenService,
+    private activatedRouter: ActivatedRoute, private imageService: ImageService){
 
   }
 
@@ -35,4 +38,9 @@ export class EncabezadoComponent implements OnInit{
       )
   }
 
+  uploadImage($event: any){
+    const id = this.activatedRouter.snapshot.params['id'];
+    const name = "perfil_" + id;
+    this.imageService.uploadImage($event, name)
+  }
 }

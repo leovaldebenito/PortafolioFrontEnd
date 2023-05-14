@@ -16,12 +16,12 @@
       <h2>{{Proyecto.nombreP}}</h2>
       <h5>{{Proyecto.descripcionP}}
       </h5>
-      <!--<h4>{{proyectos.fecha}}</h4>
-      <a href="{{proyectos.hipervinculo}}" target="_blank">Ir al proyecto en GitHub</a> -->
+      <!--<h4>{{proyectos.fecha}}</h4>-->
+      <a href="{{Proyecto.url}}" target="_blank">Ir al proyecto en GitHub</a>
     </div>
-    <!--<div class="d-none d-sm-none d-md-block">
-      <img [src]="proyectos.img">
-    </div>-->
+    <div class="d-none d-sm-none d-md-block">
+      <img [src]="Proyecto.img">
+    </div>
   </div>
   <hr color-line="silver">
 </div>
