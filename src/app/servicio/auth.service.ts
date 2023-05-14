@@ -10,7 +10,7 @@ import { JwtDto } from '../model/jwt-dto';
 })
 export class AuthService {
 
-  authURL = 'https://portafoliobackend-production-7f42.up.railway.app/auth/'
+  authURL = 'https://backendnlv.herokuapp.com/auth/'
 
   constructor(private httpClient: HttpClient) { }
 
