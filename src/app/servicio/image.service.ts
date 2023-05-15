@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Storage, getDownloadURL, list, ref, uploadBytes } from '@angular/fire/storage'
-import { environment } from 'src/environments/environment';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class ImageService {
-  URL = environment.URL + 'image/';
+  URL = 'https://frontendvaldebenito.web.app/image/';
   url: string = "";
 
   constructor(private storage: Storage) { }

@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { NuevoUsuario } from '../model/nuevo-usuario';
 import { LoginUsuario } from '../model/login-usuario';
 import { JwtDto } from '../model/jwt-dto';
-import { environment } from 'src/environments/environment';
+
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +13,7 @@ export class AuthService {
 
 
 
-  authURL = environment.URL + 'auth/';
+  authURL = 'https://frontendvaldebenito.web.app/auth/';
 
   constructor(private httpClient: HttpClient) { }
 
