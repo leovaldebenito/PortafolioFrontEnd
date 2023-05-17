@@ -6,7 +6,7 @@ import { Storage, getDownloadURL, list, ref, uploadBytes } from '@angular/fire/s
   providedIn: 'root'
 })
 export class ImageService {
-  URL = 'https://frontendvaldebenito.web.app/image/';
+  URL = 'https://backleo.herokuapp.com/image/';
   url: string = "";
 
   constructor(private storage: Storage) { }

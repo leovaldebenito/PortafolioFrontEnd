@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class HabilidadService {
 
-  URL = 'https://frontendvaldebenito.web.app/habilidad/';
+  URL = 'https://backleo.herokuapp.com/habilidad/';
 
   constructor(private httpClient: HttpClient) { }
 

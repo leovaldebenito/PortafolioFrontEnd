@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProyectoService {
-  URL = 'https://frontendvaldebenito.web.app/proyecto/';
+  URL = 'https://backleo.herokuapp.com/proyecto/';
 
   constructor(private httpClient: HttpClient) { }
 

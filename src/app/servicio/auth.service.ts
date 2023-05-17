@@ -13,7 +13,7 @@ export class AuthService {
 
 
 
-  authURL = 'https://frontendvaldebenito.web.app/auth/';
+  authURL = 'https://backleo.herokuapp.com/auth/';
 
   constructor(private httpClient: HttpClient) { }
 
