@@ -13,7 +13,7 @@ export class PersonaService {
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<persona[]>{
-    return this.httpClient.get<persona[]>(this.URL + 'lista');
+    return this.httpClient.get<persona[]>(this.URL + 'traer');
   }
 
   public details(id: number): Observable<persona>{
@@ -25,10 +25,10 @@ export class PersonaService {
   }
 
   public update(id: number, person: persona): Observable<any> {
-    return this.httpClient.put<any>(this.URL + `update/${id}`, person);
+    return this.httpClient.put<any>(this.URL + `editar/${id}`, person);
   }
 
-  /*public delete(id: number): Observable<any> {
+  public delete(id: number): Observable<any> {
     return this.httpClient.delete<any>(this.URL + `delete/${id}`);
-  }*/
+  }
 }
